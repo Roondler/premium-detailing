@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Detailing Almaty | Premium Auto Detailing</title>
+    <meta name="description" content="High-end auto detailing studio in Almaty. Specializing in ceramic coating, PPF, and premium interior restoration for luxury vehicles.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">APEX</span>
+                <span class="logo-subtext">DETAILING</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="#services" data-i18n="nav.services">Services</a>
+                <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+                <a href="#team" data-i18n="nav.team">Our Team</a>
+                <a href="shop.html" data-i18n="nav.shop">Shop</a>
+                <a href="#contact" data-i18n="nav.contact">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <div class="lang-switcher">
+                    <a href="#" class="lang-btn active" data-lang="EN">EN</a>
+                    <a href="#" class="lang-btn" data-lang="RU">RU</a>
+                    <a href="#" class="lang-btn" data-lang="KZ">KZ</a>
+                </div>
+                <!-- Cart Icon will be handled by cart.js if needed globally, but specifically in shop -->
+                <a href="shop.html" class="cart-icon-nav" id="global-cart-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    <span class="cart-badge" id="global-cart-badge" style="display:none">0</span>
+                </a>
+                <a href="#contact" class="btn btn-outline nav-cta" data-i18n="nav.book">Book Now</a>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#services" class="mobile-link" data-i18n="nav.services">Services</a>
+        <a href="#gallery" class="mobile-link" data-i18n="nav.gallery">Gallery</a>
+        <a href="#team" class="mobile-link" data-i18n="nav.team">Our Team</a>
+        <a href="shop.html" class="mobile-link" data-i18n="nav.shop">Shop</a>
+        <a href="#contact" class="mobile-link" data-i18n="nav.contact">Contact</a>
+        <div class="lang-switcher mobile-langs">
+            <a href="#" class="lang-btn active" data-lang="EN">EN</a>
+            <a href="#" class="lang-btn" data-lang="RU">RU</a>
+            <a href="#" class="lang-btn" data-lang="KZ">KZ</a>
+        </div>
+    </div>
+
+    <!-- Hero Section Update: New Image with Camry & G-Wagon -->
+    <header class="hero" id="home">
+        <div class="hero-bg" style="background-image: url('images/hero_camry_gwagon_kz_1782096991985.png');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in-up">
+            <h1 class="hero-title" data-i18n="hero.title">Perfection <br><i>Unleashed.</i></h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">Almaty's premier destination for high-end automotive refinement and protection.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary" data-i18n="hero.btn.services">Discover Services</a>
+                <a href="#contact" class="btn btn-outline" data-i18n="hero.btn.consultation">Consultation</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span data-i18n="scroll.text">Scroll</span>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title" data-i18n="services.title">Our Expertise</h2>
+                <div class="divider"></div>
+                <p class="section-desc" data-i18n="services.desc">Meticulous craftsmanship meets advanced technology to preserve and enhance your vehicle's aesthetic.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card reveal">
+                    <div class="service-img-wrapper">
+                        <img src="images/ceramic_coating_1782094409706.png" alt="Ceramic Coating" class="service-img">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title" data-i18n="srv1.title">Ceramic Coating</h3>
+                        <p class="service-text" data-i18n="srv1.desc">Diamond-hard liquid polymer protection offering unparalleled gloss, hydrophobic properties, and defense against environmental contaminants.</p>
+                        <a href="#contact" class="service-link"><span data-i18n="btn.inquire">Inquire</span> <span class="arrow">→</span></a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card reveal" style="transition-delay: 0.1s;">
+                    <div class="service-img-wrapper">
+                        <img src="images/ppf_application_1782094418651.png" alt="Paint Protection Film" class="service-img">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title" data-i18n="srv2.title">Paint Protection Film (PPF)</h3>
+                        <p class="service-text" data-i18n="srv2.desc">Invisible, self-healing armor for your vehicle's paint. Safeguards against rock chips, scratches, and road debris while maintaining a flawless finish.</p>
+                        <a href="#contact" class="service-link"><span data-i18n="btn.inquire">Inquire</span> <span class="arrow">→</span></a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card reveal" style="transition-delay: 0.2s;">
+                    <div class="service-img-wrapper">
+                        <img src="images/luxury_interior_1782094429765.png" alt="Interior Restoration" class="service-img">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title" data-i18n="srv3.title">Bespoke Interior Detailing</h3>
+                        <p class="service-text" data-i18n="srv3.desc">Deep cleaning, leather conditioning, and rejuvenation of all interior surfaces. Restoring the factory-fresh scent and luxurious feel of your cabin.</p>
+                        <a href="#contact" class="service-link"><span data-i18n="btn.inquire">Inquire</span> <span class="arrow">→</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section (Parallax) -->
+    <section class="experience" id="gallery">
+        <div class="experience-bg" style="background-image: url('images/hero_camry_gwagon_1782096022343.png');"></div>
+        <div class="experience-overlay"></div>
+        <div class="experience-content reveal">
+            <h2 class="experience-title" data-i18n="exp.title">The Apex Experience</h2>
+            <p class="experience-text" data-i18n="exp.text">We don't just wash cars; we curate automotive art. Every vehicle entrusted to us undergoes a transformational journey, resulting in a finish that surpasses showroom standards.</p>
+            <a href="#contact" class="btn btn-primary" data-i18n="exp.btn">Join the Elite</a>
+        </div>
+    </section>
+
+    <!-- Team/Masters Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title" data-i18n="team.title">Master Detailers</h2>
+                <div class="divider"></div>
+                <p class="section-desc" data-i18n="team.desc">Meet the artisans behind the perfection. Decades of combined experience dedicated to automotive excellence.</p>
+            </div>
+            
+            <div class="team-grid">
+                <!-- Master 1 -->
+                <div class="team-card reveal">
+                    <img src="images/team_master_kz_1_1782097001703.png" alt="Lead Specialist" class="team-img">
+                    <div class="team-info">
+                        <h3 class="team-name" data-i18n="team.m1.name">Rustam A.</h3>
+                        <p class="team-role" data-i18n="team.m1.role">Lead PPF Specialist</p>
+                        <p class="team-exp" data-i18n="team.m1.exp">8 Years Experience</p>
+                    </div>
+                </div>
+                
+                <!-- Master 2 -->
+                <div class="team-card reveal" style="transition-delay: 0.1s;">
+                    <img src="images/team_master_kz_2_1782097010900.png" alt="Polishing Master" class="team-img">
+                    <div class="team-info">
+                        <h3 class="team-name" data-i18n="team.m2.name">Azamat N.</h3>
+                        <p class="team-role" data-i18n="team.m2.role">Paint Correction Master</p>
+                        <p class="team-exp" data-i18n="team.m2.exp">10 Years Experience</p>
+                    </div>
+                </div>
+                
+                <!-- Master 3 -->
+                <div class="team-card reveal" style="transition-delay: 0.2s;">
+                    <img src="images/team_master_ru_1_1782097019936.png" alt="Ceramic Expert" class="team-img">
+                    <div class="team-info">
+                        <h3 class="team-name" data-i18n="team.m3.name">Ivan P.</h3>
+                        <p class="team-role" data-i18n="team.m3.role">Ceramic Coating Expert</p>
+                        <p class="team-exp" data-i18n="team.m3.exp">6 Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title" data-i18n="test.title">Clientele</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text" data-i18n="test1.text">The level of detail is simply astonishing. My Porsche looks better than the day I picked it up from the dealership. The PPF installation is flawless.</p>
+                    <div class="testimonial-author">
+                        <p class="author-name">Alisher K.</p>
+                        <p class="author-car">Porsche 911 GT3</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card reveal" style="transition-delay: 0.1s;">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text" data-i18n="test2.text">Apex Detailing is the only place in Almaty I trust with my vehicles. Their ceramic coating brought out a depth in the paint I didn't know existed.</p>
+                    <div class="testimonial-author">
+                        <p class="author-name">Timur S.</p>
+                        <p class="author-car">Mercedes-Maybach S-Class</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper reveal">
+                <div class="contact-info">
+                    <h2 class="contact-title" data-i18n="contact.title">Request a Consultation</h2>
+                    <p class="contact-text" data-i18n="contact.desc">Elevate your vehicle's aesthetic. Contact us to discuss your bespoke detailing requirements.</p>
+                    
+                    <div class="info-item">
+                        <h4 class="info-title" data-i18n="info.loc.title">Studio Location</h4>
+                        <p class="info-desc" data-i18n="info.loc.desc">Al Farabi Avenue 77/8<br>Almaty, Kazakhstan</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h4 class="info-title" data-i18n="info.phone.title">Direct Line</h4>
+                        <p class="info-desc">+7 (701) 000-00-00</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h4 class="info-title" data-i18n="info.hours.title">Hours of Operation</h4>
+                        <p class="info-desc" data-i18n="info.hours.desc">Monday - Saturday: 9:00 AM - 7:00 PM<br>Sunday: By Appointment Only</p>
+                    </div>
+
+                    <!-- Interactive Map iframe (Almaty) -->
+                    <div class="map-container">
+                        <iframe src="https://yandex.com/map-widget/v1/?um=constructor%3A7a192661578e90656a1b2e65c92f1593c7263bba799c90353d2bb0f0b4b209e9&amp;source=constructor" width="100%" height="250" frameborder="0"></iframe>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" class="form-control" placeholder="Full Name" data-i18n="form.name" required>
+                            <label for="name" class="form-label" data-i18n="form.name">Full Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" class="form-control" placeholder="Phone Number" data-i18n="form.phone" required>
+                            <label for="phone" class="form-label" data-i18n="form.phone">Phone Number</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="vehicle" class="form-control" placeholder="Vehicle Make & Model" data-i18n="form.vehicle">
+                            <label for="vehicle" class="form-label" data-i18n="form.vehicle">Vehicle Make & Model</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" class="form-control select-control" required>
+                                <option value="" disabled selected data-i18n="form.service">Select Service of Interest</option>
+                                <option value="ceramic" data-i18n="form.opt1">Ceramic Coating</option>
+                                <option value="ppf" data-i18n="form.opt2">Paint Protection Film</option>
+                                <option value="interior" data-i18n="form.opt3">Interior Detailing</option>
+                                <option value="full" data-i18n="form.opt4">Full Signature Detail</option>
+                                <option value="other" data-i18n="form.opt5">Other Inquiry</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn" data-i18n="form.submit">Submit Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">APEX</span>
+                    <span class="logo-subtext">DETAILING</span>
+                    <p class="footer-tagline" data-i18n="footer.tagline">The Art of Automotive Refinement.</p>
+                </div>
+                <div class="footer-social">
+                    <!-- Clickable SVG Social Icons -->
+                    <a href="https://instagram.com" target="_blank" class="social-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="https://whatsapp.com" target="_blank" class="social-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.rights">&copy; 2026 Apex Detailing Almaty. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Files -->
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Update global cart badge if anything in local storage
+        document.addEventListener('DOMContentLoaded', () => {
+            const cartItems = JSON.parse(localStorage.getItem('apexCart')) || [];
+            const badge = document.getElementById('global-cart-badge');
+            let totalQ = 0;
+            cartItems.forEach(item => totalQ += item.quantity);
+            if(totalQ > 0) {
+                badge.style.display = 'flex';
+                badge.textContent = totalQ;
+            }
+        });
+    </script>
+</body>
+</html>
